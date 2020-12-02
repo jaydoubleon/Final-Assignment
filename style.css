@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  background: rgb(255,255,255);
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+}
+
+header {
+  background: #fed8b1;
+  margin:0;
+  padding:25px;
+}
+
+
+nav {
+  overflow:auto;
+}
+
+nav ul {
+  margin: 0 0 0 150px;
+  padding: 0;
+  list-style: none; 
+}
+
+nav li {
+  float: left;
+  margin-left: 100px;
+}
+
+.logo {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+nav a {
+  width:100px;
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: block;
+  padding: 30px 20px;
+  transition: 500ms;
+  text-align:center;
+}
+
+nav a:hover {
+transition: 500ms;
+  background-color: rgb(254,193,130);
+  border-radius: 40px;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  transition: all .5s ease;
+  opacity:0;
+  background: rgb(0, 0, 0);
+  
+}
+
+.container:hover .overlay{
+  opacity:.7;
+}
+
+.containerfour:hover .overlay{
+  opacity:.7;
+}
+
+
+.text {
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size:  20px;
+}
+
+.overlayon {
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color:black;
+}
+
+.overlayonthree {
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color:black;
+}
+
+.overlayontwo {
+  width: 20%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color:black;
+}
+
+.container:hover .overlayon{
+  height: 40%;
+}
+
+.container:hover .overlayonthree{
+  height: 40%;
+}
+
+ h1 {
+  font-size:30px;
+  text-align: center;
+ }
+
+ .containertwo div {
+   padding: 1%;
+  box-sizing: border-box;
+  min-height: 400px;
+  
+ }
+
+ .left-col, .right-col {
+   background-color:rgba(211,211,211,.6);
+
+   width: 50%;
+   float: left;
+ }
+
+.containerthree {
+  text-align:center;
+}
+
+.button{
+  border: 1px solid #ff0000;
+  background: none;
+  padding: 10px 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin:10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttono{
+  border: 1px solid #fed8b1;
+  background: none;
+  padding: 10px 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin:10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonone{
+  color: #ff0000;
+}
+
+.buttonthree{
+  color: #fed8b1;
+}
+
+.buttontwo{
+  color: black;
+}
+
+.buttonone:hover {
+  color: #f4f4f4;
+}
+
+.buttontwo:hover {
+  color: #fed8b1;
+}
+
+.buttonthree:hover {
+  color: black;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #ff0000;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.buttono::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #fed8b1;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+
+.buttonone::before,.buttontwo::before,.buttonthree::before{
+  bottom:0;
+  border-radius: 50% 50% 0 0;
+}
+
+
+.buttontwo::before{
+  height: 180%;
+}
+
+.buttonone:hover::before {
+  height: 180%;
+}
+.buttonthree:hover::before {
+  height: 180%;
+}
+
+.buttontwo:hover::before {
+  height: 0%;
+}
+
+.contact-from{
+  max-width:350px;
+  margin:auto;
+  border-radius:5px;
+  background:#96bb72;
+  padding:20px;
+}
+
+input[type=textone], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display:inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:border-box;
+}
+
+
+.row {
+  max-width: 1300px;
+  margin: auto;
+  overflow: auto;
+  text-align: center;
+}
+
+.column {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 380px;
+  text-align: center;
+}
+
+.column img {
+  text-align: center;
+  width: 90%;
+  height: auto;
+}
